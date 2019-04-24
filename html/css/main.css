@@ -1598,6 +1598,7 @@ address {
   overflow: hidden;
   -ms-grid-columns: (1fr)[1];
   grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 1fr;
   grid-column-gap: 20px;
   grid-row-gap: 20px; }
   .thumbnail-list::before, .thumbnail-list::after {
@@ -1633,7 +1634,8 @@ address {
   width: 100%; }
 
 .thumbnail {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   line-height: 1.42857;
   background-color: #EFEFEF;
@@ -1647,6 +1649,16 @@ address {
     height: auto;
     margin-left: auto;
     margin-right: auto; }
+  .thumbnail img.lazy {
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    opacity: 1 !important;
+    transition: opacity 1s; }
+    .thumbnail img.lazy[data-src] {
+      opacity: 0; }
   .thumbnail .caption {
     padding: 9px;
     color: #333333;
@@ -1741,24 +1753,24 @@ address {
   float: left; }
 
 .logo-play .svg-blue {
-  animation: svg-blue 4.2s ease-in-out 2;
+  animation: svg-blue 4.4s ease-in-out 2;
   height: 91.222px;
   animation-delay: 0.1s; }
 
 .logo-play .svg-orange {
-  animation: svg-orange 5s ease-in-out 1;
+  animation: svg-orange 3.4s ease-in-out 1;
   height: 91.222px;
-  animation-delay: 1.4s; }
+  animation-delay: 1s; }
 
 .logo-play .svg-pink {
-  animation: svg-pink 4s ease-in-out 2;
+  animation: svg-pink 4.2s ease-in-out 2;
   height: 91.222px;
   animation-delay: 0.3s; }
 
 .logo-play .svg-yellow {
-  animation: svg-yellow 4.1s ease-in-out 2;
+  animation: svg-yellow 3.7s ease-in-out 2;
   height: 91.222px;
-  animation-delay: 1.2s; }
+  animation-delay: 0.8s; }
 
 .logo-play .svg-grey {
   animation: svg-grey 4.3s ease-in-out 2;
@@ -1787,14 +1799,14 @@ address {
     height: 91.222px;
     transform: translateY(0px); }
   25% {
-    height: 210px;
-    transform: translateY(-119px); }
-  45% {
     height: 60px;
     transform: translateY(31px); }
+  45% {
+    height: 210px;
+    transform: translateY(-119px); }
   80% {
-    height: 180px;
-    transform: translateY(-90px); }
+    height: 80px;
+    transform: translateY(11.222px); }
   100% {
     height: 91.222px;
     transform: translateY(0px); } }
@@ -1824,11 +1836,11 @@ address {
     transform: translateY(-49px);
     height: 140px; }
   45% {
-    transform: translateY(40px);
-    height: 50px; }
-  70% {
     transform: translateY(-109px);
     height: 200px; }
+  70% {
+    transform: translateY(41.222px);
+    height: 50px; }
   100% {
     transform: translateY(0px);
     height: 91.222px; } }

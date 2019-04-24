@@ -6,7 +6,7 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(1, 1fr);
-    // grid-auto-rows: 1fr;
+    grid-auto-rows: 1fr;
     // grid-template-rows: 1 1 1 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
@@ -51,7 +51,7 @@
 
 // Mixin and adjust the regular image class
 .thumbnail {
-    display: block;
+    display: flex;
     position: relative;
     // padding: $thumbnail-padding;
     // margin: $line-height-computed;
@@ -69,6 +69,20 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+
+    img.lazy {
+        &[data-src] {
+            opacity: 0;
+        }
+
+        justify-content: center;
+        align-self: center;
+        opacity: 1 !important;
+        transition: opacity 1s;
+
+    }
+
 
     // [converter] extracted a&:hover, a&:focus, a&.active to a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active
 
@@ -198,28 +212,28 @@
     &-play {
         .svg {
             &-blue {
-                animation: svg-blue 4.2s ease-in-out 2;
+                animation: svg-blue 4.4s ease-in-out 2;
                 height: 91.222px;
                 animation-delay: 0.1s;
                 // transform: translateY(0);
             }
 
             &-orange {
-                animation: svg-orange 5s ease-in-out 1;
+                animation: svg-orange 3.4s ease-in-out 1;
                 height: 91.222px;
-                animation-delay: 1.4s;
+                animation-delay: 1s;
             }
 
             &-pink {
-                animation: svg-pink 4s ease-in-out 2;
+                animation: svg-pink 4.2s ease-in-out 2;
                 height: 91.222px;
                 animation-delay: 0.3s;
             }
 
             &-yellow {
-                animation: svg-yellow 4.1s ease-in-out 2;
+                animation: svg-yellow 3.7s ease-in-out 2;
                 height: 91.222px;
-                animation-delay: 1.2s;
+                animation-delay: 0.8s;
             }
 
             &-grey {
@@ -266,18 +280,18 @@
     }
 
     25% {
-        height: 210px;
-        transform: translateY(-119px);
-    }
-
-    45% {
         height: 60px;
         transform: translateY(31px);
     }
 
+    45% {
+        height: 210px;
+        transform: translateY(-119px);
+    }
+
     80% {
-        height: 180px;
-        transform: translateY(-90px);
+        height: 80px;
+        transform: translateY(11.222px);
     }
 
     100% {
@@ -325,13 +339,13 @@
     }
 
     45% {
-        transform: translateY(40px);
-        height: 50px;
+        transform: translateY(-109px);
+        height: 200px;
     }
 
     70% {
-        transform: translateY(-109px);
-        height: 200px;
+        transform: translateY(41.222px);
+        height: 50px;
     }
 
     100% {
