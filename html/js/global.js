@@ -8,4 +8,4 @@ $(".logo").hover(function() {
   $(this).addClass("logo-play");
 });
 
-console.log("js");
+// console.log("js");
