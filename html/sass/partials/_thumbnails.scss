@@ -104,7 +104,6 @@
         background: white;
         text-align: center;
         z-index: 3;
-
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -163,6 +162,10 @@
 
         p {
             line-height: 2em;
+        }
+
+        a {
+            color: grey;
         }
     }
 }
