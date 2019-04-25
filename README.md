@@ -4,6 +4,7 @@ Tones playlist site
 
 1.) To add new playlist tile simply paste this segment of code above the previous playlist.
 
+```
 <!-- Tones 26 -->
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
   <div class="thumbnail">
@@ -21,6 +22,7 @@ Tones playlist site
   </div>
 </div>
 <!-- Tones 26 -->
+```
 
 2.) Add new image within folder named 'images'. Keep naming convention to 'TONES-26.jpg' for example.
 3.) Change the image reference (data-src) so it reads the correct number. eg. 'images/TONES-26.JPG'. (Do not change 'blank.gif').
