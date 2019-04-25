@@ -32,4 +32,4 @@ Tones playlist site
 
 5. Within the `<a>` tags replace the existing URL's (href) with the correct playlist links for both Spotify and Apple music.
 
-6) Save and publish.
+6. Save and publish.
