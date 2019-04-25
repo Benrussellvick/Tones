@@ -25,8 +25,12 @@ Tones playlist site
 ```
 
 2.) Add new image within folder named 'images'. Keep naming convention to 'TONES-26.jpg' for example.
+
 3.) Change the image reference (data-src) so it reads the correct number. eg. 'images/TONES-26.JPG'. (Do not change 'blank.gif').
+
 4.) Change the text inside <h3> tag to the appropriate number eg. Tones 26...
+  
 5.) Within the <a> tags replace the existing URL's (href) with the correct playlist links for both Spotify and Apple music.
+
 
 6.) Save and publish.
