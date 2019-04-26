@@ -12,7 +12,7 @@ Tones playlist site
     <div class="caption">
       <span></span>
       <div class="text">
-        <h3>Tones 25</h3>
+        <h3 style="color: #FD693A;">Tones 25</h3>
         <p>
           <a target="_blank" href="https://itunes.apple.com/gb/playlist/tones-25/pl.u-qp3BIRER8P5" class="btn" role="button">Apple music</a> /
           <a href="https://open.spotify.com/playlist/1yrBp1HXKNMcGEiVDWCKHA?si=O-h3Qj1URlSjphE1YeSp1w" class="btn" role="button">Spotify</a>
