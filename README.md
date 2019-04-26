@@ -24,7 +24,7 @@ Tones playlist site
 <!-- Tones 26 -->
 ```
 
-2. Add new image within folder named 'images'. Keep naming convention to 'TONES-26.jpg' for example.
+2. Add new image within folder named 'images' (keep file size as small as possible). Keep naming convention to 'TONES-26.jpg' for example.
 
 3. Change the image reference (data-src) so it reads the correct number. eg. 'images/TONES-26.JPG'. (Do not change 'blank.gif').
 
